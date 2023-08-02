@@ -112,6 +112,10 @@ main {
     margin-bottom: 1rem;
 }
 
+#tasks .task .content {
+    flex: 1 1 0%;
+}
+
 #tasks .task .content .text {
     color: white;
     font-size: 1.125rem;
@@ -140,16 +144,26 @@ main {
 
 .task .actions button:hover {
     background-image: none;
-    border: var(--purple) solid 0.15rem;
-    border-radius: 1rem;
-    /*opacity: 0.8;*/
+    opacity: 0.8;
 }
 
 .task .actions button:active {
-    border: var(--pink) solid 0.15rem;
     opacity: 0.6;
 }
 
+.task .actions .edit {
+    color: var(--purple);
+}
+
+
+.task .actions .edit:hover {
+     opacity: 0.6;
+}
+
+.task .actions .delete {
+    color: crimson;
+
+}
 
 
 
